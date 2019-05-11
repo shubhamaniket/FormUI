@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <style>
+        body{
+            background-color: #0099ff;
+            background-image: url("http://www.transparenttextures.com/patterns/arabesque.png");
+        }
+        #container{
+            width:450px;
+            margin:0 auto;
+            border:2px solid rgb(241, 218, 218);
+            margin-top: 100px;
+            background:lightskyblue;
+            box-shadow: 0 0 3px rgba(0,0,0,0.1);
+        }
+        h2{
+            color:beige;
+            background-color: cornflowerblue;
+            font-weight: normal;
+            padding:10px;
+            margin:0;
+            font-size:24px;
+        }
+        ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        li{
+            font-size:20px;
+            height:40px;
+            line-height: 40px;
+            font-family: 'Source Sans Pro', sans-serif;
+            color:#666;
+        }
+        input{
+            font-size:18px;
+            width:86%;
+            box-sizing: border-box;
+            color:#2980B9;
+            background-color: #f7f7f7;
+            padding: 8px 8px 8px 8px;
+        }
+        input:focus{
+            background-color: #fff;
+            border: 3px solid #2980B9;
+            outline: none;
+        }
+        span{
+            width:0px;
+            height:40px;
+            margin-right: 20px;
+            background-color:linen;
+            display: inline-block;
+            text-align:center;
+            transition: 0.2s linear;
+            opacity: 0;
+            
+        }
+        li:hover span{
+            width:43px;
+            opacity:1.0;
+        }
+        #op{
+            font-size:18px;
+            width:85%;
+            box-sizing: border-box;
+            color:#2980B9;
+            background-color: #f7f7f7;
+            padding: 8px 8px 8px 8px;
+        }
+        #op:focus{
+            background-color: #fff;
+            border: 3px solid #2980B9;
+            outline: none;
+        }
+        .button1{
+            display:inline-block;
+            padding:0.35em 1.2em;
+            border:0.1em solid #FFFFFF;
+            margin: 0 0.5em 0.5em 0;
+            border-radius: 0.12em;
+            box-sizing:border-box;
+            text-decoration: none;
+            font-weight:bold;
+            color:black;
+            text-align:center;
+            transition: all 0.2s;
+        }
+        .button:hover{
+            columns: #000000;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Sign Up</h2>
+        <form method="GET" autocomplete="off" action="#">
+        <ul>
+            <li><span><i class="fas fa-user"></span></i><input type="text" placeholder="Enter Name" id="name"></li><br>
+            <li><span><i class="fas fa-calendar-plus"></i></span><input type="Date" placeholder="Date Of Birth" id="DOB"></li><br>
+            <li><span><i class="fas fa-at"></i></span><input type="email" placeholder="E-Mail" id="E-mail"></li><br>
+            <li><span><i class="fas fa-mobile"></i></span><input type="number" placeholder="Mobile" id="mobile1"></li><br>
+            <li><span><i class="fas fa-mobile"></i></span><input type="number" placeholder="Re-type Mobile" id="mobile2"></li><br>
+            <li><span><i class="fas fa-key"></i></span><input type="password" placeholder="Password" id="pwd1"></li><br>
+            <li><span><i class="fas fa-key"></i></span><input type="password" placeholder="Re-type Password" id="pwd2"></li><br>
+            <li><span><i class="fas fa-venus-mars"></i></span>
+            <select id="op">
+                <option>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            </li><br>
+            <li><center><button type="button" class="button1">Submit</button></center></li>
+        </ul>
+    </form>
+    </div>
+    <script type="text/javascript" src="form.js"></script>
+</body>
+</html>
